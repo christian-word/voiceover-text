@@ -1,9 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta property="og:image" content="https://raw.githubusercontent.com/christian-word//voiceover-text/main/unnamed.jpg">
     <title>Проявления Божьей Любви</title>
     <style>
         * {
@@ -92,10 +91,33 @@
             height: 45px;
             border-radius: 8px;
             outline: none;
+            filter: brightness(1.1) contrast(1.1);
         }
 
         audio::-webkit-media-controls-panel {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        audio::-webkit-media-controls-play-button {
+            background-color: #ffffff;
+            border-radius: 50%;
+            transform: scale(1.2);
+        }
+
+        audio::-webkit-media-controls-current-time-display,
+        audio::-webkit-media-controls-time-remaining-display {
+            color: #ffffff;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        audio::-webkit-media-controls-timeline {
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        audio::-webkit-media-controls-volume-slider {
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.3);
         }
 
         .text-content {
@@ -315,7 +337,7 @@
             <div class="audio-player">
                 <div class="audio-label">🎙️ Озвучка мужским голосом</div>
                 <audio controls>
-                    <source src="01.mp3" type="audio/wav">
+                    <source src="Без названия (1).wav" type="audio/wav">
                     Ваш браузер не поддерживает элемент audio.
                 </audio>
             </div>
@@ -323,7 +345,7 @@
             <div class="audio-player">
                 <div class="audio-label">🎙️ Озвучка женским голосом</div>
                 <audio controls>
-                    <source src="02.mp3" type="audio/mpeg">
+                    <source src="audio.mp3" type="audio/mpeg">
                     Ваш браузер не поддерживает элемент audio.
                 </audio>
             </div>
