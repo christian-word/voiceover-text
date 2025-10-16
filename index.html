@@ -18,6 +18,51 @@
             color: #2c3e50;
             padding: 20px;
             min-height: 100vh;
+            position: relative;
+        }
+
+        .logo-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo-text {
+            font-size: 1.1em;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin: 0;
+            animation: gradientFlow 3s linear infinite;
+            background: linear-gradient(90deg, 
+                #667eea 0%, 
+                #764ba2 25%, 
+                #f093fb 50%, 
+                #764ba2 75%, 
+                #667eea 100%);
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-subtitle {
+            font-size: 0.7em;
+            color: #6c757d;
+            font-style: italic;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+
+        @keyframes gradientFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 300% 50%;
+            }
         }
 
         .container {
@@ -413,11 +458,44 @@
             .footer-secondary {
                 font-size: 0.8em;
             }
+
+            .logo-icon {
+                font-size: 60px;
+            }
+
+            .logo-text {
+                font-size: 1.8em;
+                letter-spacing: 2px;
+            }
+
+            .logo-subtitle {
+                font-size: 1em;
+                letter-spacing: 1.5px;
+            }
+
+            .logo-header {
+                padding: 8px 12px;
+                margin-bottom: 15px;
+            }
+
+            .logo-text {
+                font-size: 0.95em;
+                letter-spacing: 1px;
+            }
+
+            .logo-subtitle {
+                font-size: 0.65em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="logo-header">
+            <div class="logo-text">Gospel Voice Media</div>
+            <div class="logo-subtitle">Озвучка христианских текстов</div>
+        </div>
+
         <h1>Проявления Божьей Любви</h1>
         
         <h2>1 часть</h2>
