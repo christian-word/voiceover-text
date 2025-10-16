@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -31,12 +31,16 @@
 
         h1 {
             text-align: center;
-            color: #1a365d;
+            color: #1a202c;
             font-size: 2.5em;
             margin-bottom: 40px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         h2 {
@@ -120,6 +124,63 @@
             background: rgba(255, 255, 255, 0.3);
         }
 
+        .continuation {
+            text-align: center;
+            margin: 60px 0 40px 0;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            border-radius: 15px;
+            border-top: 3px solid #667eea;
+            border-bottom: 3px solid #764ba2;
+        }
+
+        .continuation-dots {
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 15px;
+            letter-spacing: 8px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .continuation-text {
+            font-size: 1.3em;
+            font-weight: 600;
+            font-style: italic;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 1px;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px 20px 20px 20px;
+            border-top: 2px solid #e9ecef;
+            color: #6c757d;
+            font-size: 0.95em;
+        }
+
+        .footer p {
+            margin: 8px 0;
+            color: #6c757d;
+        }
+
+        .footer-secondary {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
         .text-content {
             margin-top: 40px;
         }
@@ -201,8 +262,12 @@
         }
 
         strong {
-            color: #1a365d;
-            font-weight: 600;
+            color: #2d3748;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         @media (max-width: 768px) {
@@ -324,6 +389,30 @@
             strong {
                 display: inline;
             }
+
+            .continuation {
+                margin: 40px 0 30px 0;
+                padding: 30px 15px;
+            }
+
+            .continuation-dots {
+                font-size: 1.5em;
+                letter-spacing: 6px;
+            }
+
+            .continuation-text {
+                font-size: 1.1em;
+            }
+
+            .footer {
+                margin-top: 30px;
+                padding: 20px 15px 15px 15px;
+                font-size: 0.85em;
+            }
+
+            .footer-secondary {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
@@ -386,7 +475,17 @@
             <p>Для сердца, что ищет Бога, именно эта сцена - самая понятная, самая живая, самая человеческая и в то же время - самая Божественная! Через неё даже неверующий может почувствовать дрожь: Бог - это не абстрактная сила, не далёкая идея, а Личность, которая любит сильнее, чем мы можем вообразить, любит до боли, до слёз!</p>
 
             <p>Теперь давайте с трепетом покажем, как это событие связано с ветхозаветным образом «милостивого престола» - где кровь жертвы капала не на народ, а на крышку ковчега, между крыльями херувимов... То есть на место Божьего присутствия, где человек и Бог снова встречались без осуждения, в объятиях милости! Развернём эту тему по шагам - от Ветхого Завета к Евангелию, чтобы с замиранием сердца увидеть, как одна и та же истина - Божья любовь и прощение - раскрывается в разных формах, пока не достигает своей полноты в сцене с грешницей и на Голгофе, трогая нас до глубины души!</p>
+
+            <div class="continuation">
+                <div class="continuation-dots">• • •</div>
+                <div class="continuation-text">Продолжение следует</div>
+            </div>
         </div>
+
+        <footer class="footer">
+            <p>© 2025 Gospel Voice Media | м. Суми</p>
+            <p class="footer-secondary">© 2025 р.</p>
+        </footer>
     </div>
 </body>
 </html>
